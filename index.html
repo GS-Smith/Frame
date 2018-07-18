@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A CSS3 Frame Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+	
+#imgCont, #poem, #main, #bar {margin: auto;}
+#imgCont, #poem {
+		max-width: 500px;
+		max-height: 700px;
+  		position: relative;
+  		margin: auto;
+  		object-fit: contain;
+		}
+.mySlides, .mySlides2 {display: none;}
+
+#prev, #next {
+	 transition: 0.6s ease;
+}
+
+.poemText {padding: 0 2em 2em 2em;
+
+}
+#bar {margin-left: 3em;
+		margin-right: 3em;
+	}
+
+img {width: 100%;}
+
+</style>
+</head>
+<body>
+	<div id="main">
+	<div class="w3-panel w3-center w3-white">
+		<h1>Poems + Pictures</h1>
+	</div>
+	<!--the image-->
+<div id="imgCont" class="w3-container">
+	<div class="w3-card w3-center w3-white  w3-mobile">
+		<img class="mySlides" src="images/image1.jpg">
+		<img class="mySlides" src="images/image3.jpg">
+		<img class="mySlides" src="images/image4.jpg">
+		<img class="mySlides" src="images/image5.jpg">
+	</div>
+</div>
+
+	<!--the buttons-->
+<div id="bar" class="w3-panel">
+<div class="w3-bar">
+  <button id="prev" class="w3-button w3-indigo w3-left" onclick="plusDivs(-1); plusDivs1(-1)">Left</button>
+  <button id="next" class="w3-button w3-indigo w3-right" onclick="plusDivs(1); plusDivs1(1)">Right</button>
+</div> 
+</div>
+
+<!-- The poems -->
+<div id="poem"  class="w3-container">
+	<div class="w3-card w3-center w3-white  w3-mobile">
+		<div class="mySlides2">
+			<h2 class="w3-container w3-blue">Poem One</h2>
+		<div class="poemText">
+			<p>Bacon ipsum dolor amet ribeye meatball meatloaf sausage chicken boudin sirloin, short loin pork belly leberkas shoulder. Short loin tail landjaeger, biltong corned beef jowl jerky pork chop. Ham kevin corned beef picanha strip steak drumstick capicola. Andouille boudin ball tip sirloin short ribs buffalo ham hock turducken venison capicola strip steak pork bacon pork chop jerky. Chuck beef drumstick biltong brisket landjaeger bacon bresaola ball tip filet mignon pancetta rump pork belly pork. Jerky kevin cow short loin flank chicken tri-tip tenderloin short ribs hamburger venison ribeye cupim ball tip rump. Shank tenderloin sausage alcatra chicken frankfurter.</p>
+
+			<p>Kevin fatback chicken kielbasa bacon pork chop filet mignon ribeye. Ham hock chuck pastrami tenderloin buffalo, leberkas spare ribs brisket shoulder pork loin ribeye. Buffalo filet mignon swine beef ribs, boudin kielbasa drumstick spare ribs tail. Meatball turkey filet mignon brisket pork belly venison. Cupim brisket meatloaf pancetta turkey spare ribs. Brisket pancetta beef ribs ham hock.</p>
+		</div>
+	</div>
+
+		<div class="mySlides2" class="w3-text-red">
+			<h2 class="w3-container w3-red">Poem Two</h2>
+	<div class="poemText">
+			<p class="w3-text-red">Bacon ipsum dolor amet ribeye meatball meatloaf sausage chicken boudin sirloin, short loin pork belly leberkas shoulder. Short loin tail landjaeger, biltong corned beef jowl jerky pork chop. Ham kevin corned beef picanha strip steak drumstick capicola. Andouille boudin ball tip sirloin short ribs buffalo ham hock turducken venison capicola strip steak pork bacon pork chop jerky. Chuck beef drumstick biltong brisket landjaeger bacon bresaola ball tip filet mignon pancetta rump pork belly pork. Jerky kevin cow short loin flank chicken tri-tip tenderloin short ribs hamburger venison ribeye cupim ball tip rump. Shank tenderloin sausage alcatra chicken frankfurter.</p>
+
+			<p class="w3-text-red">Kevin fatback chicken kielbasa bacon pork chop filet mignon ribeye. Ham hock chuck pastrami tenderloin buffalo, leberkas spare ribs brisket shoulder pork loin ribeye. Buffalo filet mignon swine beef ribs, boudin kielbasa drumstick spare ribs tail. Meatball turkey filet mignon brisket pork belly venison. Cupim brisket meatloaf pancetta turkey spare ribs. Brisket pancetta beef ribs ham hock.</p>
+		</div>
+	</div>
+
+		<div class="mySlides2">
+			<h2 class="w3-container w3-purple">Poem Three</h2>
+	<div class="poemText">
+			<p>Bacon ipsum dolor amet ribeye meatball meatloaf sausage chicken boudin sirloin, short loin pork belly leberkas shoulder. Short loin tail landjaeger, biltong corned beef jowl jerky pork chop. Ham kevin corned beef picanha strip steak drumstick capicola. Andouille boudin ball tip sirloin short ribs buffalo ham hock turducken venison capicola strip steak pork bacon pork chop jerky. Chuck beef drumstick biltong brisket landjaeger bacon bresaola ball tip filet mignon pancetta rump pork belly pork. Jerky kevin cow short loin flank chicken tri-tip tenderloin short ribs hamburger venison ribeye cupim ball tip rump. Shank tenderloin sausage alcatra chicken frankfurter.</p>
+
+			<p>Kevin fatback chicken kielbasa bacon pork chop filet mignon ribeye. Ham hock chuck pastrami tenderloin buffalo, leberkas spare ribs brisket shoulder pork loin ribeye. Buffalo filet mignon swine beef ribs, boudin kielbasa drumstick spare ribs tail. Meatball turkey filet mignon brisket pork belly venison. Cupim brisket meatloaf pancetta turkey spare ribs. Brisket pancetta beef ribs ham hock.</p>
+		</div>
+</div>
+
+		<div class="mySlides2">
+			<h2 class="w3-container w3-orange">Poem Four</h2>
+	<div class="poemText">
+			<p>Bacon ipsum dolor amet ribeye meatball meatloaf sausage chicken boudin sirloin, short loin pork belly leberkas shoulder. Short loin tail landjaeger, biltong corned beef jowl jerky pork chop. Ham kevin corned beef picanha strip steak drumstick capicola. Andouille boudin ball tip sirloin short ribs buffalo ham hock turducken venison capicola strip steak pork bacon pork chop jerky. Chuck beef drumstick biltong brisket landjaeger bacon bresaola ball tip filet mignon pancetta rump pork belly pork. Jerky kevin cow short loin flank chicken tri-tip tenderloin short ribs hamburger venison ribeye cupim ball tip rump. Shank tenderloin sausage alcatra chicken frankfurter.</p>
+
+			<p>Kevin fatback chicken kielbasa bacon pork chop filet mignon ribeye. Ham hock chuck pastrami tenderloin buffalo, leberkas spare ribs brisket shoulder pork loin ribeye. Buffalo filet mignon swine beef ribs, boudin kielbasa drumstick spare ribs tail. Meatball turkey filet mignon brisket pork belly venison. Cupim brisket meatloaf pancetta turkey spare ribs. Brisket pancetta beef ribs ham hock.</p>
+		</div>
+	</div>
+	</div>
+</div>
+
+	
+	<!--the footer-->
+	<div class="w3-panel w3-indigo w3-center  w3-mobile">
+		<p>footer</p>
+	</div>
+
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+<script>
+var slideIndex2 = 1;
+showDivs1(slideIndex2);
+
+function plusDivs1(n) {
+  showDivs1(slideIndex2 += n);
+}
+
+function showDivs1(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  if (n > x.length) {slideIndex2 = 1}    
+  if (n < 1) {slideIndex2 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex2-1].style.display = "block";  
+}
+</script>
+
+
+</body>
+</html>
